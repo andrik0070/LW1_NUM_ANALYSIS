@@ -5,7 +5,7 @@ from pprint import  pprint
 
 def gaussSeidel(matrix, b, epsilon):
     n = len(matrix)
-    x = [.7 for i in range(n)]
+    x = [0 for i in range(n)]
 
     converge = False
     while not converge:
@@ -21,4 +21,7 @@ def gaussSeidel(matrix, b, epsilon):
     return x
 
 
-pprint(gaussSeidel([[4, -3, 2], [1, 2, 9], [-1, 8, 1]], [-21, -14, 24], 50))
+pprint(gaussSeidel([[4, -3, 2], [-1, 8, 1], [1, 2, 9]], [-14, -21, 24], 0.000000000001))
+
+#[-8, -4,  4]
+
